@@ -1,0 +1,32 @@
+<html>
+<body>
+<fieldset>
+<legend>Fill the details of the Query</legend>
+<form action="query.php" method="post">
+Control No:<input type='text' name='cnum'/><br>
+Created By:<input type='text' name='cby'/><br>
+Assigned To:<input type='text' name='asto'/><br>
+Department<select  name='department'><br>
+<option value='Army'>Army</option>
+<option value='Navy'>Navy</option>
+<option value='Airforce'>Airforce</option>
+</select><br>
+Priority<select  name='priority'><br>
+<option value='High'>High</option>
+<option value='Normal'>Normal</option>
+<option value='Low'>Low</option>
+</select><br>
+Start Date:<input type='date' value='dd/mm/yyyy' name='sdate'/><br>
+Due Date:<input type='date' value='dd/mm/yyyy' name='ddate'/><br>
+Description:<input type='text' name='description'/><br>
+Attachments:<input type='file' name='userfile'/><br>
+<input type="hidden" name="MAX_FILE_SIZE"
+                 value="16000000"/>
+</fieldset>
+<button type='submit' name='upload' id='upload' value='send'>Submit</button>
+</form>
+</body>
+</html>
+<?php
+echo "Hello";
+?>

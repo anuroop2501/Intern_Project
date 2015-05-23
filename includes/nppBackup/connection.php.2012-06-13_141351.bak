@@ -1,0 +1,8 @@
+<?php
+DEFINE('host', 'localhost');
+DEFINE('user', 'root');
+DEFINE('password', '');
+DEFINE('db', 'rrs');
+$con = mysql_connect(host,user,password) or die(mysql_error());
+$db = mysql_select_db('rrs', $con) or die(mysql_error());
+?>
